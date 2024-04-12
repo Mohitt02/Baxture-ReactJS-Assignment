@@ -9,7 +9,7 @@ const People = ({ user, users, setUsers }: { user: any , users:any, setUsers:any
     const [isFollow, setIsFollow] = useState(false);
 
     const deleteUser = (id:any) => {
-        setUsers(users => users.filter((user)=> user.id != id ))
+        setUsers((users: any[]) => users.filter((user)=> user.id != id ))
     }
 
     function toggleIsFollow(): void {
